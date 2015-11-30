@@ -1,0 +1,25 @@
+{
+    "title": "Let’s Grow Edible Front Yards!",
+    "images": [
+        {
+            "src": "./images/image4.jpg",
+            "altText": "",
+            "content": "<h2 class=\"center overlay\">Don't let your yard look like this...</h2>"
+        },
+        {
+            "src": "./images/image1.jpg",
+            "altText": "",
+            "content": "<h2 class=\"center overlay\">Let's have this instead!</h2>"
+        },
+        {
+            "src": "./images/image2.jpg",
+            "altText": "",
+            "content": ""
+        },
+        {
+            "src": "./images/image3.jpg",
+            "altText": "",
+            "content": ""
+        }
+    ]
+}

@@ -1,25 +1,26 @@
 {
-    "title": "Let’s Grow Edible Front Yards!",
-    "images": [
+    "title": "Go Edible!",
+    "sections": [
         {
-            "src": "./images/image4.jpg",
-            "altText": "",
-            "content": "<h2 class=\"center overlay\">Don't let your yard look like this...</h2>"
+            "id": "section-a",
+            "label": "Let's grow edible front yards!",
+            "showInNav": false,
+            "markdown": "index-section-a.md"
         },
         {
-            "src": "./images/image1.jpg",
+            "id": "section-b",
+            "showInNav": true,
+            "label": "Don't Do This...",
             "altText": "",
-            "content": "<h2 class=\"center overlay\">Let's have this instead!</h2>"
+            "markdown": "index-section-b.md",
+            "backgroundImage": "./images/image4.jpg"
         },
         {
-            "src": "./images/image2.jpg",
-            "altText": "",
-            "content": ""
-        },
-        {
-            "src": "./images/image3.jpg",
-            "altText": "",
-            "content": ""
+            "id": "section-c",
+            "label": "Do this!",
+            "showInNav": true,
+            "markdown": "index-section-c.md",
+            "backgroundImage": "./images/edible-garden-1.jpg"
         }
     ]
 }

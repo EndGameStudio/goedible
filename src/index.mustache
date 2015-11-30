@@ -3,21 +3,31 @@
     <head>
         <meta charset="utf-8">
         <title>Go Edible!</title>
-        <link href='https://fonts.googleapis.com/css?family=Josefin+Sans|Crimson+Text' rel='stylesheet' type='text/css'>
-        <link href='styles.css' rel="stylesheet" type="text/css">
+        <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700|Crimson+Text' rel='stylesheet' type='text/css'>
+        <link href='index.css' rel="stylesheet" type="text/css">
     </head>
     <body class="stripe advert">
         <div class="container">
             <h1 class="center page-title">{{title}}</h1>
+            <ul class="nav center">
+                {{#sections}}
+                    {{#showInNav}}
+                    <li class="nav-item"><a href="#{{id}}">{{label}}</a></li>
+                    {{/showInNav}}
+                {{/sections}}
+            </ul>
             <div class="content">
-                {{#images}}
-                <div class="image-container">
-                    <p class="image-item">
-                        <img class="image" src="{{src}}" alt="{{altText}}">
-                    </p>
-                    <div class="section">{{{content}}}</div>
-                </div>
-                {{/images}}
+                {{#sections}}
+                <section id="{{id}}" class="content-item" {{#backgroundImage}}style="background-image:url({{backgroundImage}});"{{/backgroundImage}}>
+                    <div class="content-wrap">
+                        <h2 class="center">{{label}}</h2>
+                        <div class="section">{{{content}}}</div>
+                        {{#backgroundImage}}
+                        <div class="content-wrap-background"></div>
+                        {{/backgroundImage}}
+                    </div>
+                </section>
+                {{/sections}}
             </div>
             <div class="footer center">
                 <p>2015 - Ciriana Orozco</p>
